@@ -19,9 +19,9 @@
 
 	<div class="container">
 	
-          <div class="page-header">
-        
-	
+          <div class="navbar">
+             <div class="navbar-inner nav-collapse" style="height: auto;">
+               <ul class="nav">
 					
 						<div class="picture">
 							<% if current_user %>
@@ -37,14 +37,17 @@
 						<%= link_to 'Sign in with Github', '/auth/github' %>
 						<% end %>
 						</div>
+				</ul>
+			</div>
+		</div>				
+			    			
 					
-		  </div>			
 	
 
 
 
 <%= yield %>
-</br></br></br></br>
+
 <div class="row-fluid">
       <div class="col-md-2">
       <h2> Sidebar </h2>
