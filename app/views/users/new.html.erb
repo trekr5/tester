@@ -1,8 +1,12 @@
 
 <% if current_user %>
+
+ <%= image_tag current_user.image, class: "img", width: 70, height: 70 %>
+
+</br>
 Welcome, <strong> <%=  current_user.nickname %></strong>!
 
-</br></br>
+</br>
 <%= link_to 'Sign out', '/signout' %>
 <% else %>
 <%= link_to 'Sign in with Github', '/auth/github' %>
