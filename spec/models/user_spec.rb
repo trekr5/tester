@@ -9,11 +9,7 @@ describe User do
 
     
     
-    let(:user) {User.create_with_omniauth(auth: {"provider" => "github",
-      "uid" => 5555666,
-      "info" => 
-      {"nickname" => "rose7",
-        "image" => "http://testing.com"}})}
+  user = FactoryGirl.build(:auth)
 
 
         it "sets the nickname" do
