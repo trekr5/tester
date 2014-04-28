@@ -4,7 +4,7 @@ Tester::Application.routes.draw do
   resources :users
   # You can have the root of your site routed with "root"
 
-  root 'users#new'
+  root 'users#index'
 
   get '/auth/:provider/callback' => 'sessions#create'
   get '/signin' => 'sessions#new', :as => :signin
