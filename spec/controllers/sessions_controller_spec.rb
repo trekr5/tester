@@ -10,14 +10,19 @@ describe SessionsController do
       describe "#create" do
 
         it "should successfully create a user" do 
+        expect {post :create, provider: :github}.to change{ User.count }.by(1)
 
         end
 
         it "should successfully create a session" do 
+          post :create, provider: :github
+          session[:user_id].should_not be_nil
 
         end
 
-        it "should redirect user to root url" do 
+        it "should redirect user to root url" do
+          post :create, provider: :github
+          response.should redirect_to root_url 
 
         end
 
