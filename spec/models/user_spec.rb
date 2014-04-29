@@ -13,7 +13,7 @@ describe User do
             "info" => 
              {"nickname" => "rose7",
              "image" => "http://testing.com",
-             "name" => nil }}
+             "name" => "angela" }}
    end
     
    subject {User.create_with_omniauth(auth)}
@@ -26,20 +26,24 @@ describe User do
         end
 
         it "sets the uid" do
+          subject.uid.should eq "555566"
 
         end
         
        
         it "sets the name"  do 
+          subject.name.should eq nil
 
         end
 
          it "sets the provider"  do 
+          subject.provider.should eq "github"
 
         end
 
          it "sets the image"  do 
-
+           
+          subject.image.should eq "http://testing.com" 
         end
         
 
