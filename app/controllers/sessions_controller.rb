@@ -3,20 +3,21 @@ class SessionsController < ApplicationController
 skip_before_filter :set_current_user	
 
 
-def create  
+    def create  
     #raise request.env["omniauth.auth"].to_yaml 
-    #raise request.session_options[:id]
-    auth = request.env["omniauth.auth"]  
-    user = User.find_by_provider_and_uid(auth["provider"], auth["uid"]) || User.create_with_omniauth(auth)   
 
-    session[:user_id] = user.id  
-    redirect_to root_url, notice: "Signed in!"  
+       auth = request.env["omniauth.auth"]  
+       user = User.find_by_provider_and_uid(auth["provider"], auth["uid"]) || User.create_with_omniauth(auth)   
 
+       session[:user_id] = user.id  
+       redirect_to root_url, notice: "Signed in!"  
+     
     
-  end 
+    end 
 
- def destroy  
-  session[:user_id] = nil  
-  redirect_to root_url, notice: "Signed out!"  
-  end   
+    def destroy  
+       session[:user_id] = nil  
+       redirect_to root_url, notice: "Signed out!"  
+      
+    end   
 end
