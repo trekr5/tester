@@ -1,6 +1,6 @@
 FactoryGirl define do 
 
-  factory :auth do
+  factory :user do
 
     provider "github"
     uid      "5555666"

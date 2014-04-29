@@ -9,10 +9,11 @@ describe User do
 
     
     
-  user = FactoryGirl.build(:auth)
+  user = FactoryGirl.create(:user)
 
 
         it "sets the nickname" do
+
           
           expect(user.nickname).to eq "rose7"
 
