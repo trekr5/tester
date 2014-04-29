@@ -13,7 +13,21 @@ margin: 0px;
 	float: right;
 }
 
-.navbar h5 {
+h4 {
 
 	text-align: center;
+	color: black;
+}
+
+
+.navbar.navbar-default {
+background-color: #FFFF00;
+border-color: #FFFF00;
+}
+
+
+body { 
+	min-height: 2000px;
+	padding-top: 130px; 
+
 }

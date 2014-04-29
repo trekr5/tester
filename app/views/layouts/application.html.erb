@@ -5,7 +5,7 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
-  <head>
+  
   <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,38 +15,59 @@
     <link href="/assets/bootstrap.min.css" rel="stylesheet">
     <link href="test.css" rel="stylesheet" type="text/css">
 
+     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
 <body>
     <!-- <script src="test.js"></script> -->
 
-	<div class="container">
 	
-          <div class="navbar">
-              <h5>   Web Conference App </h5>
-             <div class="navbar-inner navbar-collapse navbar-fixed-top" style="height: auto;">
-               <div class="container-fluid">
-
-               <ul class="nav">
+	
+          <!-- <div class="navbar"> -->
+             
+             <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+                
+                  
+               <!-- <ul class="nav"> -->
+                  <div class="container-fluid">
+                     <a class="navbar-brand text-muted" href="#">Logo</a>
+                      <div class="collapse navbar-collapse">
+                        
+                    <h4>   Conference App </h4>
 					
-						<div class="picture">
-							<% if current_user %>
+						          <div class="picture">
+							          <% if current_user %>
 
-						 <%= image_tag current_user.image, class: "img", width: 60, height: 60 %>
+						               <%= image_tag current_user.image, class: "img", width: 60, height: 60 %>
 
-						</br>
-						Welcome, <strong> <%=  current_user.nickname %></strong>!
+						               </br>
+						               Welcome, <strong> <%=  current_user.nickname %></strong>!
 
-						</br>
-						<%= link_to 'Sign out', '/signout' %>
-						<% else %>
-						<%= link_to 'Sign in with Github', '/auth/github' %>
-						<% end %>
-						</div>
-				  </ul>
-			</div>
-		  </div>		
+						               </br>
+						               <%= link_to 'Sign out', '/signout' %>
+						               <% else %>
+						               <%= link_to 'Sign in with Github', '/auth/github' %>
+						            <% end %>
+						          </div>
+
+                    </div>
+                  </div>
+                  </div>
+				  <!-- </ul> -->
+            
+             </div>
+			      
+		  <!-- </div> -->		
 
 <%= yield %>
 
+<div class="container-fluid">
 <div class="row-fluid">
       <div class="col-md-2">
         <h2> Sidebar </h2>
