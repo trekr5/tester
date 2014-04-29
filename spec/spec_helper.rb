@@ -4,6 +4,18 @@ require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
 require 'rspec/autorun'
 
+
+OmniAuth.config.test_mode = true
+
+  omniauth_hash = {"provider" => "github",
+            "uid" => "555566",
+            "info" => 
+             {"nickname" => "rose7",
+             "image" => "http://testing.com",
+             "name" => "angela" }}
+
+OmniAuth.config.add_mock(:github, omniauth_hash)   
+
 # Requires supporting ruby files with custom matchers and macros, etc,
 # in spec/support/ and its subdirectories.
 Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
@@ -39,4 +51,6 @@ RSpec.configure do |config|
   # the seed, which is printed after each run.
   #     --seed 1234
   config.order = "random"
+
+          
 end
