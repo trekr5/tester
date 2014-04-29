@@ -7,15 +7,21 @@ describe User do
 
  describe ".create_with_omniauth" do
 
+   let(:auth) do 
+   	{"provider" => "github",
+            "uid" => "555566",
+            "info" => 
+             {"nickname" => "rose7",
+             "image" => "http://testing.com",
+             "name" => nil }}
+   end
     
-    
-  user = FactoryGirl.create(:user)
+   subject {User.create_with_omniauth(auth)}
 
 
         it "sets the nickname" do
-
-          
-          expect(user.nickname).to eq "rose7"
+          subject.nickname.should eq "rose7"
+           
 
         end
 
