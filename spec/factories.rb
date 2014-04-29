@@ -1,13 +1,13 @@
 FactoryGirl define do 
 
-  factory :user do
+  factory :user do |u|
 
-    provider "github"
-    uid      "5555666"
-    name     "Flower"
-    info      {"nickname" => "rose7", "image" => "http://testing.com"}
-    nickname  {"nickname" => "rose7", "image" => "http://testing.com"} "rose7"  
-    image     {"nickname" => "rose7", "image" => "http://testing.com"} "http://testing.com"
+    u.provider "github"
+    u.uid      "5555666"
+    u.name     "Flower"
+    u.info      {"nickname" => "rose7", "image" => "http://testing.com"}
+    u.nickname  {"nickname" => "rose7", "image" => "http://testing.com"} "rose7"  
+    u.image     {"nickname" => "rose7", "image" => "http://testing.com"} "http://testing.com"
 
 
   
