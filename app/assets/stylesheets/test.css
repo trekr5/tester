@@ -45,16 +45,16 @@ margin-left: -20px;
  margin-left: -9px;
 }
 
-.col-md-10 p {
- 
- margin-left: -25px;
-
-}
 
 .col-md-10 h2 {
+	margin-left: -25px;
+}
+
+.col-md-10 p {
 
 	margin-left: -25px;
 }
+
 
 .nav.nav-pills.nav-stacked li  a:hover {
 text-decoration: none;
