@@ -10,15 +10,12 @@ describe Registration do
   	    expect(registration).to be_valid	 
   	end
 
-  	
-
-
     it "is invalid without a user_id and talk_id" do
 
     	registration = Registration.new(
   		 	user_id: nil, talk_id: nil)
 
-       expect(registration).should_not be_valid
+       expect(registration).not_to be_valid
 
     end 	
 
