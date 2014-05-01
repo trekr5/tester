@@ -5,3 +5,20 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+Talk.create(title: 'Fishes culture',
+	        description: 'Talk about fishes',
+	        category: 'Koi Fish',
+	        duration: '20 mins')
+
+
+Talk.create(title: 'Wolves culture',
+	        description: 'Talk about wolves',
+	        category: 'Animals',
+	        duration: '40 mins')
+
+Talk.create(title: 'Shellfish culture',
+	        description: 'Talk about shellfish',
+	        category: 'Shellfish',
+	        duration: '5 mins')

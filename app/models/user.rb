@@ -1,6 +1,9 @@
 class User < ActiveRecord::Base
-	
-has_and_belongs_to_many :talks 
+	has_many :registrations
+	has_many :talks, through: :registrations
+
+	validates :name, presence: true
+	validates :nickname, presence: true
 
 	def self.create_with_omniauth(auth)
 		#require 'pry'; binding.pry
