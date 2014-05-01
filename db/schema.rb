@@ -11,7 +11,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140428090152) do
+ActiveRecord::Schema.define(version: 20140501162538) do
+
+  create_table "registrations", force: true do |t|
+    t.integer  "user_id"
+    t.integer  "talk_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "registrations", ["talk_id"], name: "index_registrations_on_talk_id"
+  add_index "registrations", ["user_id"], name: "index_registrations_on_user_id"
+
+  create_table "talks", force: true do |t|
+    t.string   "title"
+    t.string   "description"
+    t.string   "duration"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "category"
+    t.string   "speaker"
+    t.string   "image"
+  end
 
   create_table "users", force: true do |t|
     t.string   "provider"

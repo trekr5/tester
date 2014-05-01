@@ -1,4 +1,10 @@
 class User < ActiveRecord::Base
+	has_many :registrations
+	has_many :talks, through: :registrations
+
+	
+	
+
 	def self.create_with_omniauth(auth)
 		#require 'pry'; binding.pry
 		
@@ -9,5 +15,14 @@ class User < ActiveRecord::Base
 			user.nickname = auth["info"]["nickname"]
 			user.image = auth["info"]["image"]
 		end
-	end  
+	end 
+
+	
+
+
+
+
+
 end
+
+
