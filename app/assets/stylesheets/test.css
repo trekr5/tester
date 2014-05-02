@@ -1,18 +1,6 @@
 
 
-.glyphicon {
-   font-family:'Glyphicons Halflings';
- 
-}
 
-@font-face {
-  font-family: 'Glyphicons Halflings';
-  src: url('/fonts/glyphicons-halflings-regular.eot');
-  src: url('/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
-  url('/fonts/glyphicons-halflings-regular.woff') format('woff'),
-  url('/fonts/glyphicons-halflings-regular.ttf') format('truetype'),
-  url('/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
-}
 
 
 .page-header
@@ -57,6 +45,7 @@ margin-left: -20px;
 .col-md-2 h2 {
 
  margin-left: -9px;
+
 }
 
 
@@ -73,5 +62,6 @@ margin-left: -20px;
 .nav.nav-pills.nav-stacked li  a:hover {
 text-decoration: none;
 background-color: #7BCBF5;
+color: white;
 }
 
