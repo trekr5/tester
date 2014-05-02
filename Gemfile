@@ -54,3 +54,4 @@ end
 # gem 'debugger', group: [:development, :test]
 
 gem 'pry'
+gem 'font-awesome-rails'
