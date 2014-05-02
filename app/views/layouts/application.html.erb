@@ -65,49 +65,48 @@
 			      
 		  <!-- </div> -->		
 
-<%= yield %>
-
 <div class="container-fluid">
-<div class="row-fluid">
+  <div class="row-fluid">
       <div class="col-md-2">
         <h2> Menu </h2>
           <div class="sidebar">
           <ul class="nav nav-pills nav-stacked">
-             <li><a href='#'>Link 1</a></li>
-             <li><a href='#'>Link 2</a></li>
-             <li><a href='#'>Link 3</a></li>
-             <li><a href='#'>Link 4</a></li>
-             <li><a href='#'>Link 5</a></li>
-             <li><a href='#'>Link 6</a></li>
-             <li><a href='#'>Link 7</a></li>
+             <li><a href='/'>
+              <i class="fa fa-home fa-lg fa-fw"></i> Home
+              </a></li>
+             <li><a href= <%= schedule_path %>>
+              <i class="fa fa-calendar fa-lg fa-fw"></i> Schedule
+              </a></li>
+             <li><a href= <%= speakers_path %>>
+              <i class="fa fa-microphone fa-lg fa-fw"></i> Speakers
+              </a></li>
+            <li><a href= <%= users_path %>>
+              <i class="fa fa-group fa-lg fa-fw"></i> Attendees
+              </a></li>
+             <li><a href='#'>
+              <i class="fa fa-flag-o fa-lg fa-fw"></i> Sponsors
+              </a></li>
+             <li><a href='#'>
+              <i class="fa fa-file-text fa-lg fa-fw"></i> Whitepapers
+              </a></li>
+             <li><a href='#'>
+              <i class="fa fa-rss-square fa-lg fa-fw"></i> Social Media
+              </a></li>
 
           </ul>
         </div>
       </div>
+
+      <div class="col-md-10">
+
+<%= yield %>
+      </div>
+  </div>
+
+
+  
 </div>
 
-
-<!-- <div class="container-fluid"> -->
-    <div class="row-fluid">
-
-        <div class="col-md-10">
-        <h2> Main content </h2>
-        <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius
-        </p>
-
-        <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius
-        </p>
-
-        <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. 
-        </p>
-
-        </div>
-      </div> 
-    </div>
- <!-- </div> -->
 
     
 </head>

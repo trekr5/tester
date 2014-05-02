@@ -6,13 +6,19 @@ Tester::Application.routes.draw do
   resources :registrations
   # You can have the root of your site routed with "root"
 
-  root 'users#index'
+  #resources :speakers, only: [:index]
+
+  get '/speakers' => 'speakers#index', as: :speakers
+  get '/schedule' => 'schedule#index', as: :schedule
+
+  root 'home#index'
 
   get '/auth/:provider/callback' => 'sessions#create'
   get '/signin' => 'sessions#new', :as => :signin
 
   get '/signout' => 'sessions#destroy', :as => :signout
   get '/auth/failure' => 'sessions#failure'
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

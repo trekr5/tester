@@ -1,0 +1,31 @@
+
+
+
+
+ <div class="table table-responsive">
+    <table class="table table-striped">
+  <thead>
+   <tr>
+    <tr>
+    <th>#</th>
+    <th>Name</th>
+    <th>Nickname</th>
+    <th>Image</th>
+    </tr>
+</tr>
+  </thead>
+  
+    <tbody>
+      <% @users.each do |user| %>
+       <tr>
+        <td><%= user.id %></td>
+        <td><%= user.name %></td>
+        <td><%= user.nickname %></td>
+        <td> <%= image_tag current_user.image, class: "img", width: 30, height: 30 %></td>
+      
+        </tr>
+        <% end %>
+  </tbody>
+</table>
+</div>
+      
