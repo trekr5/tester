@@ -35,3 +35,11 @@ Talk.create(title: 'How to start a Shrimp business',
 	        duration: '45 mins',
 	        speaker: 'Tweedle Dum',
 	        image: '/app/assets/images/brown_hair.jpeg')
+
+User.create(provider: 'github',
+            uid: '777788',
+            info: 'nil',
+            nickname: 'whizzy',
+            image: '/app/assets/images/business_man.jpeg',
+            name: 'angela')
+

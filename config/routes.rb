@@ -11,7 +11,7 @@ Tester::Application.routes.draw do
   get '/speakers' => 'speakers#index', as: :speakers
   get '/schedule' => 'schedule#index', as: :schedule
 
-  root 'users#index'
+  root 'home#index'
 
   get '/auth/:provider/callback' => 'sessions#create'
   get '/signin' => 'sessions#new', :as => :signin

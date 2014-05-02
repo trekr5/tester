@@ -80,7 +80,7 @@
              <li><a href= <%= speakers_path %>>
               <i class="fa fa-microphone fa-lg fa-fw"></i> Speakers
               </a></li>
-            <li><a href='#'>
+            <li><a href= <%= users_path %>>
               <i class="fa fa-group fa-lg fa-fw"></i> Attendees
               </a></li>
              <li><a href='#'>
@@ -96,10 +96,15 @@
           </ul>
         </div>
       </div>
+
+      <div class="col-md-10">
+
+<%= yield %>
+      </div>
   </div>
 
 
-  <%= yield %>
+  
 </div>
 
 
