@@ -23,6 +23,11 @@ ActiveRecord::Schema.define(version: 20140501162538) do
   add_index "registrations", ["talk_id"], name: "index_registrations_on_talk_id"
   add_index "registrations", ["user_id"], name: "index_registrations_on_user_id"
 
+  create_table "talk_users", force: true do |t|
+    t.integer "talk_id"
+    t.integer "user_id"
+  end
+
   create_table "talks", force: true do |t|
     t.string   "title"
     t.string   "description"

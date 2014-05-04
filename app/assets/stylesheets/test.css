@@ -1,7 +1,10 @@
 
 
 
+.container-fluid {
 
+	height: 110px;
+}
 
 .page-header
 {
@@ -13,6 +16,17 @@ margin: 0px;
 {
 
 	float: right;
+}
+
+.details
+{
+
+	
+	display: block;
+    font-size: 14px;
+    right: 12px;
+    top: 20px;
+
 }
 
 h4 {
@@ -30,6 +44,7 @@ border-color: #FFD153;
 
 body { 
 	padding-top: 130px; 
+	min-height: 2000px;
 
 }
 

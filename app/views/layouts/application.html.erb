@@ -37,26 +37,27 @@
                <!-- <ul class="nav"> -->
                   <div class="container-fluid">
                      <a class="navbar-brand text-muted" href="#">Logo</a>
-                      <div class="collapse navbar-collapse">
+                      <!-- <div class="collapse navbar-collapse"> -->
                         
                     <h4>   Conference App </h4>
 					
 						          <div class="picture">
 							          <% if current_user %>
 
-						               <%= image_tag current_user.image, class: "img", width: 60, height: 60 %>
+						               <%= image_tag current_user.image, class: "img", width: 40, height: 40 %>
 
 						               </br>
-						               Welcome, <strong> <%=  current_user.nickname %></strong>!
+						               <div class="details"> <strong> Welcome, </strong> <%=  current_user.nickname %>
 
 						               </br>
 						               <%= link_to 'Sign out', '/signout' %>
 						               <% else %>
 						               <%= link_to 'Sign in with Github', '/auth/github' %>
 						            <% end %>
+                            </div>
 						          </div>
 
-                    </div>
+                    
                   
                   </div>
 				  <!-- </ul> -->

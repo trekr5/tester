@@ -12,7 +12,7 @@ Talk.create(title: 'Fishes culture',
 	        category: 'Koi Fish',
 	        duration: '20 mins',
 	        speaker: 'Sandy Mango',
-	        image: '/app/assets/images/baseball_player_vintage.jpeg')
+	        image: 'baseball_player_vintage.jpg')
 
 
 Talk.create(title: 'Wolves culture',
@@ -20,26 +20,33 @@ Talk.create(title: 'Wolves culture',
 	        category: 'Animals',
 	        duration: '40 mins',
 	        speaker: 'Dusty Knowles',
-	        image: '/app/assets/images/big_nose_man.jpeg')
+	        image: 'big_nose_man.jpeg')
 
 Talk.create(title: 'Shellfish culture',
 	        description: 'Talk about shellfish',
 	        category: 'Shellfish',
 	        duration: '25 mins',
 	        speaker: 'Tweedle Dee',
-	        image: '/app/assets/images/business_man.jpeg')
+	        image: '/assets/business_man.jpg')
 
 Talk.create(title: 'How to start a Shrimp business',
 	        description: 'How to start a Shrimp business in 30 days',
 	        category: 'Shellfish',
 	        duration: '45 mins',
 	        speaker: 'Tweedle Dum',
-	        image: '/app/assets/images/brown_hair.jpeg')
+	        image: 'brown_hair.jpg')
 
 User.create(provider: 'github',
-            uid: '777788',
+            uid: '745670',
             info: 'nil',
-            nickname: 'whizzy',
-            image: '/app/assets/images/business_man.jpeg',
+            nickname: 'konstantine',
+            image: '/assets/business_man.jpg',
             name: 'angela')
+
+User.create(provider: 'github',
+            uid: '745550',
+            info: 'nil',
+            nickname: 'jasper',
+            image: '/assets/big_nose_man.jpg',
+            name: 'ruby')
 
