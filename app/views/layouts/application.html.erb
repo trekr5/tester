@@ -44,7 +44,7 @@
 						          <div class="picture">
 							          <% if current_user %>
 
-						               <%= image_tag current_user.image, class: "img", width: 40, height: 40 %>
+						               <%= image_tag current_user.image, class: "img-rounded", width: 40, height: 40 %>
 
 						               </br>
 						               <div class="details"> <strong> Welcome, </strong> <%=  current_user.nickname %>
@@ -76,7 +76,7 @@
               <i class="fa fa-home fa-lg fa-fw"></i> Home
               </a></li>
              <li><a href= <%= schedule_path %>>
-              <i class="fa fa-calendar fa-lg fa-fw"></i> Schedule
+              <i class="fa fa-calendar fa-lg fa-fw"></i> Schedule & Sessions
               </a></li>
              <li><a href= <%= speakers_path %>>
               <i class="fa fa-microphone fa-lg fa-fw"></i> Speakers
