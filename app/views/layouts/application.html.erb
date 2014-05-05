@@ -7,92 +7,102 @@
   <%= csrf_meta_tags %>
   
   <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap 101 Template</title>
 
-    <!-- Bootstrap -->
-    <link href="/assets/bootstrap.min.css" rel="stylesheet">
-    <link href="test.css" rel="stylesheet" type="text/css">
+  <!-- Bootstrap -->
+  <link href="/assets/bootstrap.min.css" rel="stylesheet">
+  <link href="test.css" rel="stylesheet" type="text/css">
 
-     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+  <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
+      <![endif]-->
+    </head>
 
-<body>
-    <!-- <script src="test.js"></script> -->
+    <body>
+      <!-- <script src="test.js"></script> -->
 
-	
-	
-          <!-- <div class="navbar"> -->
-             
-             <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-                
-                  
-               <!-- <ul class="nav"> -->
-                  <div class="container-fluid">
-                     <a class="navbar-brand text-muted" href="#">Logo</a>
-                      <!-- <div class="collapse navbar-collapse"> -->
-                        
-                    <h4>   Conference App </h4>
-					
-						          <div class="picture">
-							          <% if current_user %>
 
-						               <%= image_tag current_user.image, class: "img-rounded", width: 40, height: 40 %>
 
-						               </br>
-						               <div class="details"> <strong> Welcome, </strong> <%=  current_user.nickname %>
+      <!-- <div class="navbar"> -->
 
-						               </br>
-						               <%= link_to 'Sign out', '/signout' %>
-						               <% else %>
-						               <%= link_to 'Sign in with Github', '/auth/github' %>
-						            <% end %>
-                            </div>
-						          </div>
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
 
-                    
-                  
-                  </div>
-				  <!-- </ul> -->
-            
-             </div>
-			      
-		  <!-- </div> -->		
 
-<div class="container-fluid">
-  <div class="row-fluid">
-      <div class="col-md-2">
-        <h2> Menu </h2>
+       <!-- <ul class="nav"> -->
+       <div class="container-fluid">
+         <a class="navbar-brand text-muted" href="#">Logo</a>
+         <!-- <div class="collapse navbar-collapse"> -->
+
+         <h4>   Conference App </h4>
+
+         <span class="picture">
+           <% if current_user %>
+
+           <%= image_tag current_user.image, class: "img-rounded", width: 40, height: 40 %>
+         </span>
+
+         <div class="details"> <strong> Welcome, </strong> <%=  current_user.nickname %>
+           <div class="dropdown">
+            <a href = "#" class="dropdown-toggle account" data-toggle = "dropdown">
+              <span class="fa fa-caret-down"></span></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <li role="presentation"><a role="menuitem" href="#">Profile</a></li>
+                <li role="presentation"><a role="menuitem" href="/signout">Sign out</a></li>
+
+              </ul>
+            </div>
+          
+
+          </br>
+          <!-- <%= link_to 'Sign out', '/signout' %> --> 
+          <% else %>
+          <%= link_to 'Sign in with Github', '/auth/github' %>
+          <% end %>
+
+        </div>
+
+
+
+      </div>
+      <!-- </ul> -->
+
+    </div>
+
+    <!-- </div> -->		
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="col-md-2">
+          <h2> Menu </h2>
           <div class="sidebar">
-          <ul class="nav nav-pills nav-stacked">
+            <ul class="nav nav-pills nav-stacked">
              <li><a href='/'>
               <i class="fa fa-home fa-lg fa-fw"></i> Home
-              </a></li>
-             <li><a href= <%= schedule_path %>>
+            </a></li>
+            <li><a href= <%= schedule_path %>>
               <i class="fa fa-calendar fa-lg fa-fw"></i> Schedule & Sessions
-              </a></li>
-             <li><a href= <%= speakers_path %>>
+            </a></li>
+            <li><a href= <%= speakers_path %>>
               <i class="fa fa-microphone fa-lg fa-fw"></i> Speakers
-              </a></li>
+            </a></li>
             <li><a href= <%= users_path %>>
               <i class="fa fa-group fa-lg fa-fw"></i> Attendees
-              </a></li>
-             <li><a href='#'>
+            </a></li>
+            <li><a href='#'>
               <i class="fa fa-flag-o fa-lg fa-fw"></i> Sponsors
-              </a></li>
-             <li><a href='#'>
+            </a></li>
+            <li><a href='#'>
               <i class="fa fa-file-text fa-lg fa-fw"></i> Whitepapers
-              </a></li>
-             <li><a href='#'>
+            </a></li>
+            <li><a href='#'>
               <i class="fa fa-rss-square fa-lg fa-fw"></i> Social Media
-              </a></li>
+            </a></li>
 
           </ul>
         </div>
@@ -100,16 +110,16 @@
 
       <div class="col-md-10">
 
-<%= yield %>
+        <%= yield %>
       </div>
+    </div>
+
+
+
   </div>
 
 
-  
-</div>
 
-
-    
 </head>
 
 </body>
