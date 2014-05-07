@@ -108,8 +108,8 @@ h4 {
 
 
 .navbar.navbar-default {
-background-color: white;
-border-color: white;
+background-color: none;
+border-color: none;
 margin-bottom: 0;
 }
 
@@ -163,7 +163,10 @@ color: white;
 /* Declare heights because of positioning of img element */
 .carousel .item {
   height: 500px;
+
   background-color:#555;
+  
+  
 }
 .carousel img {
   position: absolute;

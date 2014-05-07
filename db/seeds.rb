@@ -12,7 +12,7 @@ Talk.create(title: 'Fishes culture',
 	        category: 'Koi Fish',
 	        duration: '20 mins',
 	        speaker: 'Sandy Mango',
-	        image: 'baseball_player_vintage.jpg')
+	        image: '/assets/baseball_player_vintage.jpg')
 
 
 Talk.create(title: 'Wolves culture',
@@ -20,7 +20,7 @@ Talk.create(title: 'Wolves culture',
 	        category: 'Animals',
 	        duration: '40 mins',
 	        speaker: 'Dusty Knowles',
-	        image: 'big_nose_man.jpeg')
+	        image: '/assets/big_nose_man.jpeg')
 
 Talk.create(title: 'Shellfish culture',
 	        description: 'Talk about shellfish',
@@ -34,7 +34,7 @@ Talk.create(title: 'How to start a Shrimp business',
 	        category: 'Shellfish',
 	        duration: '45 mins',
 	        speaker: 'Tweedle Dum',
-	        image: 'brown_hair.jpg')
+	        image: '/assets/brown_hair.jpg')
 
 User.create(provider: 'github',
             uid: '745670',
