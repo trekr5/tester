@@ -44,7 +44,7 @@
          <span class="picture">
            <% if current_user %>
 
-           <%= image_tag current_user.image, class: "img-rounded", width: 40, height: 40 %>
+           <%= image_tag current_user.image, class: "img-circle", width: 50, height: 50 %>
            <div class="details">
            <div class="dropdown">
             <strong> Welcome, </strong> <%=  current_user.nickname %>
@@ -81,7 +81,7 @@
       <div class="row-fluid">
        
         <div class="col-md-2"> 
-          <h2 class="sidebar-menu"> Menu </h2>
+          <h2 class="sidebar-menu">  </h2>
           <div class="sidebar">
             <ul class="nav nav-pills nav-stacked">
              <li><a href='/'>
