@@ -48,12 +48,18 @@ User.create(provider: 'github',
             info: 'nil',
             nickname: 'konstantine',
             image: '/assets/business_man.jpg',
-            name: 'angela')
+            name: 'angela',
+            fullname: 'konstantinople',
+            company: 'self-employed',
+            interest: 'yoga, running')
 
 User.create(provider: 'github',
             uid: '745550',
             info: 'nil',
             nickname: 'jasper',
             image: '/assets/big_nose_man.jpg',
-            name: 'ruby')
+            name: 'ruby',
+            fullname: 'the dog',
+            company: 'Funding circle',
+            interest: 'swimming, walking')
 

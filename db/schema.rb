@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140501162538) do
+ActiveRecord::Schema.define(version: 20140508101749) do
 
   create_table "registrations", force: true do |t|
     t.integer  "user_id"
@@ -48,6 +48,9 @@ ActiveRecord::Schema.define(version: 20140501162538) do
     t.datetime "updated_at"
     t.string   "name"
     t.string   "image"
+    t.string   "fullname"
+    t.string   "company"
+    t.string   "interest"
   end
 
 end
