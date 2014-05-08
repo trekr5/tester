@@ -36,6 +36,13 @@ Talk.create(title: 'How to start a Shrimp business',
 	        speaker: 'Tweedle Dum',
 	        image: '/assets/brown_hair.jpg')
 
+Talk.create(title: 'Breeding fishes',
+	        description: 'The bussiness of fish',
+	        category: 'Crustaceans',
+	        duration: '50 mins',
+	        speaker: 'Dorothy',
+	        image: '/assets/baseball_player_vintage.jpg')
+
 User.create(provider: 'github',
             uid: '745670',
             info: 'nil',
