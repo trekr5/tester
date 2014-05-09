@@ -22,6 +22,7 @@ OmniAuth.config.test_mode = true
              "image" => "http://testing.com",
              "name" => "angela" }}
 
+
 OmniAuth.config.add_mock(:github, omniauth_hash)   
 
 # Requires supporting ruby files with custom matchers and macros, etc,
@@ -60,6 +61,8 @@ RSpec.configure do |config|
   #     --seed 1234
   config.include Capybara::DSL
   config.order = "random"
+
+  config.include SessionSupport
 
           
 end
