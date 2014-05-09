@@ -2,6 +2,10 @@
 
 <h2> Profile Page </h2>
 
+
+<%= image_tag @user.image, class: "img-circle", width: 200, height: 200 %>
+<%= @user.nickname %>
+
 <strong ><%= @user.nickname %> </strong>, 
                  <%= @user.fullname %>
                  <%= @user.company %>

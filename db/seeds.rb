@@ -14,7 +14,6 @@ Talk.create(title: 'Fishes culture',
 	        speaker: 'Sandy Mango',
 	        image: '/assets/baseball_player_vintage.jpg')
 
-
 Talk.create(title: 'Wolves culture',
 	        description: 'Talk about wolves',
 	        category: 'Animals',

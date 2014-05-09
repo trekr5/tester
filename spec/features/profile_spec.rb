@@ -5,6 +5,7 @@ feature "testing profile page" do
 
 	subject { page }
 
+
 	describe "profile page" do 
          before {
          	user = FactoryGirl.create(:user)
@@ -14,8 +15,21 @@ feature "testing profile page" do
 
 		
 	it "should show profile page text" do
-       page.should have_content('Profile Page')
+       subject.should have_content('Profile Page')
     end
+
+
+    it "should have form fields on page" do 
+        subject.should have_field("Full Name")
+        subject.should have_field("Company")
+        subject.should have_field("Interests")
+
+    
+
+    end
+
+
+    
 
 
         
