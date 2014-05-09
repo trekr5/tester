@@ -80,7 +80,8 @@
     <div class="container-fluid pull-up">
       <div class="row-fluid">
        
-        <div class="col-md-2"> 
+        <div class="col-md-2">
+         
           <h2 class="sidebar-menu">  </h2>
           <div class="sidebar">
             <ul class="nav nav-pills nav-stacked">
@@ -105,17 +106,20 @@
             <li><a href='#'>
               <i class="fa fa-rss-square fa-lg fa-fw"></i> Social Media
             </a></li>
+            <div class="alert alert-warning">
+           <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+           <div><%= flash[:notice] %></div>
+         </div>
 
           </ul>
         </div>
       </div>
 
       <div class="col-md-10">
-        <div><%= flash[:notice] %></div>
 
-        <%= yield %>
+       <%= yield %>
+       
       </div>
-    </div>
 
 
 

@@ -12,7 +12,7 @@ class ApplicationController < ActionController::Base
   helper_method :current_user
 
   def authenticate!
-  	redirect_to root_path, notice: "You must be logged in to see that page" unless current_user
+  	redirect_to root_path, notice: "You must be logged in to see this page" unless current_user
   end
   
 end
