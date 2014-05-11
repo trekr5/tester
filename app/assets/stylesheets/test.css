@@ -148,6 +148,11 @@ background-color: #7BCBF5;
 color: white;
 }
 
+.nav > li > a {
+
+	padding: 16px 32px;
+}
+
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
