@@ -35,7 +35,7 @@ end
 
 group :development, :test do
   gem 'simplecov', '>=0.3.8', :require => false	
-  gem 'rspec-rails'
+  gem 'rspec-rails' 
   gem 'capybara'
   gem 'factory_girl_rails'
   gem 'guard-rspec', require: false

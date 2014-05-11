@@ -9,23 +9,26 @@
 <strong ><%= @user.nickname %> </strong>, 
                 
 
- <%= form_for :user do |f| %>
+ <%= form_for @user do |f| %>
   <p>
-    <%= f.label :fullname %><br>
+    
+    <%= f.label :fullname, "Full Name" %><br />
     <%= f.text_field :fullname %>
   </p>
  
   <p>
-    <%= f.label :company %><br>
-    <%= f.text_area :company %>
+    <%= f.label :company, "Company" %><br />
+    <%= f.text_field :company %>
   </p>
  
  <p>
-    <%= f.label :interest %><br>
-    <%= f.text_area :interest %>
+    <%= f.label :interest, "Interests" %><br />
+    <%= f.text_field :interest %>
   </p>
 
   <p>
-    <%= f.submit %>
+    <div class="actions" >
+    <%= f.submit  "Update" %>
+  </div>
   </p>
 <% end %>                
