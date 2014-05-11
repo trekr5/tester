@@ -43,30 +43,30 @@
 
            <%= image_tag current_user.image, class: "img-circle", width: 50, height: 50 %>
            <div class="details">
-           <div class="dropdown">
-            <strong> Welcome, </strong> <%=  current_user.nickname %>
-            <a href = "#" class="dropdown-toggle account" data-toggle = "dropdown">
-              <span class="fa fa-caret-down"></span></a>
-              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+             <div class="dropdown">
+              <strong> Welcome, </strong> <%=  current_user.nickname %>
+              <a href = "#" class="dropdown-toggle account" data-toggle = "dropdown">
+                <span class="fa fa-caret-down"></span></a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
 
-                <li role="presentation">
-                  <a role="menuitem" href="<%= user_path(current_user) %>">Profile</a>
-                </li>
-                <li role="presentation"><a role="menuitem" href="/signout">Sign out</a></li>
+                  <li role="presentation">
+                    <a role="menuitem" href="<%= user_path(current_user) %>">Profile</a>
+                  </li>
+                  <li role="presentation"><a role="menuitem" href="/signout">Sign out</a></li>
 
-              </ul>
-            </div>
+                </ul>
+              </div>
 
-          </br>
-          <!-- <%= link_to 'Sign out', '/signout' %> --> 
-          <% else %>
-          <%= link_to 'Sign in with Github', '/auth/github' %>
-          <% end %>
+            </br>
+            <!-- <%= link_to 'Sign out', '/signout' %> --> 
+            <% else %>
+            <%= link_to 'Sign in with Github', '/auth/github' %>
+            <% end %>
 
-        </div>
-         </span>
+          </div>
+        </span>
 
-         
+        
 
 
 
@@ -106,28 +106,30 @@
             <li><a href='#'>
               <i class="fa fa-rss-square fa-lg fa-fw"></i> Social Media
             </a></li>
+            <% if flash[:notice] %>
             <div class="alert alert-warning">
-           <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-           <div><%= flash[:notice] %></div>
-         </div>
+             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+             <div><%= flash.now[:notice] %></div>
+           </div>
+           <% end %>
 
-          </ul>
-        </div>
-      </div>
+         </ul>
+       </div>
+     </div>
 
-      <div class="col-md-10">
+     <div class="col-md-10">
 
        <%= yield %>
        
-      </div>
+     </div>
 
 
 
-  </div>
+   </div>
 
 
 
-</head>
+ </head>
 
 </body>
 </html>
