@@ -20,23 +20,4 @@ require 'spec_helper'
 
 describe LocationsController do
      
-     describe "#new" do 
-      before {
-        visit(new_location_path)
-      }
-
-      it "should create new location" do
-       
-          fill_in 'Address', :with => 'Eiffel Tower'
-          fill_in 'Latitude', :with => '48.8582'
-          fill_in 'Longitude', :with => '2.2945'
-
-          click_button('Create Location')
-        
-
-      end  
-
-  
-  end
-
 end
