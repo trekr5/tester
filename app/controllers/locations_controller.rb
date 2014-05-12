@@ -46,27 +46,27 @@ class LocationsController < ApplicationController
 
   # PATCH/PUT /locations/1
   # PATCH/PUT /locations/1.json
-  def update
-    respond_to do |format|
-      if @location.update(location_params)
-        format.html { redirect_to @location, notice: 'Location was successfully updated.' }
-        format.json { head :no_content }
-      else
-        format.html { render action: 'edit' }
-        format.json { render json: @location.errors, status: :unprocessable_entity }
-      end
-    end
-  end
+  #def update
+    #respond_to do |format|
+     # if @location.update(location_params)
+      #  format.html { redirect_to @location, notice: 'Location was successfully updated.' }
+       # format.json { head :no_content }
+      #else
+       # format.html { render action: 'edit' }
+        #format.json { render json: @location.errors, status: :unprocessable_entity }
+      #end
+    #end
+  #end
 
   # DELETE /locations/1
   # DELETE /locations/1.json
-  def destroy
-    @location.destroy
-    respond_to do |format|
-      format.html { redirect_to locations_url }
-      format.json { head :no_content }
-    end
-  end
+  #def destroy
+   # @location.destroy
+    #respond_to do |format|
+     # format.html { redirect_to locations_url }
+      #format.json { head :no_content }
+    #end
+  #end
 
   private
     # Use callbacks to share common setup or constraints between actions.

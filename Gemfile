@@ -42,7 +42,6 @@ group :development, :test do
 end
 
   gem 'geocoder'
-  gem 'protected_attributes'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'

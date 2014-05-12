@@ -61,6 +61,15 @@ User.create(provider: 'github',
             fullname: 'the dog',
             company: 'Funding circle',
             interest: 'swimming, walking')
-Location.create(address: 'Canary Wharf',
+
+Location.create!(address: 'Canary Wharf',
 	            latitude: '51.5050363',
 	            longitude: '-0.0197732')
+Location.create!(address: 'Royal Festival Hall, London',
+	            latitude: '51.5058361',
+	            longitude: '-0.1167889')
+Location.create!(address: 'London Bridge',
+	            latitude: '51.507929',
+	            longitude: '-0.0877086')
+
+
