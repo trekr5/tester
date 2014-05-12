@@ -1,10 +1,15 @@
 <!-- <p id="notice"><%= notice %></p> -->
 
 
+<div class="row-fluid">
+	<div class="col-md-10">
+		<div class="venue">
+<h2> Venue </h2>
+        </div>
 
-<h3> Location </h3>
 
-<p>
+	<div class="position">
+   <p>		
   <strong>Address:</strong>
   <%= @location.address %>
 </p>
@@ -18,15 +23,32 @@
   <strong>Longitude:</strong>
   <%= @location.longitude %>
 </p>
+</div>
+<br /> 
 
-<h3>Nearby Locations</h3>
+<%= image_tag "http://maps.google.com/maps/api/staticmap?size=400x400&sensor=false&zoom=16&markers=#{@location.latitude}%2C#{@location.longitude}" %>
+
+<div class="geocode">
+
+<h3>Nearby Attractions</h3>
+
 <ul>
-<% @location.nearbys(8).each do |location| %>
+  
+ <!-- <% @nearby_locations = @location.nearbys(10) %> -->
 
+<% for location in @location.nearbys(30) %>
+   
+ 
   <li><%= link_to location.address, location %> (<%= location.distance.round(2) %> miles)</li>
 <% end %>
 </ul>
-  <%= puts "this is working" %>
 
-<%= link_to 'Edit', edit_location_path(@location) %> |
-<%= link_to 'Back', locations_path %>
+<p>
+
+<!-- <%= link_to 'View All', locations_path %>-->
+</p>
+   </div>
+  </div>
+
+</div>
+
