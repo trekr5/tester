@@ -19,5 +19,15 @@ require 'spec_helper'
 # that an instance is receiving a specific message.
 
 describe LocationsController do
-     
+     describe "POST #create" do
+
+      it "should successfully create a location" do
+
+        valid_params = FactoryGirl.attributes_for(:location)
+
+        expect{post :create, location: valid_params}.to change(Location, :count).by(1)
+      end
+
+
+    end
 end
