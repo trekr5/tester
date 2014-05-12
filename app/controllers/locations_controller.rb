@@ -1,15 +1,22 @@
 class LocationsController < ApplicationController
-  before_action :set_location, only: [:show, :edit, :update, :destroy]
+  #before_action :set_location, only: [:show, :edit, :update, :destroy]
 
   # GET /locations
   # GET /locations.json
-  def index
-    @locations = Location.all
+  
+    def index
+      if params[:search].present?
+       @locations = Location.near(params[:search], 50, :order => :distance)
+      else
+      @locations = Location.all
+  end
+
   end
 
   # GET /locations/1
   # GET /locations/1.json
   def show
+    @location = Location.find(params[:id])
   end
 
   # GET /locations/new
@@ -63,9 +70,9 @@ class LocationsController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_location
-      @location = Location.find(params[:id])
-    end
+    #def set_location
+     # @location = Location.find(params[:id])
+    #end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def location_params

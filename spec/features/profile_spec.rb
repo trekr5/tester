@@ -21,8 +21,8 @@ feature "testing profile page" do
 
     it "should have form fields on page" do 
         subject.should have_field("Full Name")
-        #subject.should have_field('company')
-        #subject.should have_field('interest')
+        subject.should have_field("Company")
+        subject.should have_field("Interests")
 
     
 

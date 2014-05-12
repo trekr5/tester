@@ -61,4 +61,6 @@ User.create(provider: 'github',
             fullname: 'the dog',
             company: 'Funding circle',
             interest: 'swimming, walking')
-
+Location.create(address: 'Canary Wharf',
+	            latitude: '51.5050363',
+	            longitude: '-0.0197732')

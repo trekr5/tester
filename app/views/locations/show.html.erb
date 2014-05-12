@@ -1,4 +1,8 @@
-<p id="notice"><%= notice %></p>
+<!-- <p id="notice"><%= notice %></p> -->
+
+
+
+<h3> Location </h3>
 
 <p>
   <strong>Address:</strong>
@@ -14,6 +18,15 @@
   <strong>Longitude:</strong>
   <%= @location.longitude %>
 </p>
+
+<h3>Nearby Locations</h3>
+<ul>
+<% @location.nearbys(8).each do |location| %>
+
+  <li><%= link_to location.address, location %> (<%= location.distance.round(2) %> miles)</li>
+<% end %>
+</ul>
+  <%= puts "this is working" %>
 
 <%= link_to 'Edit', edit_location_path(@location) %> |
 <%= link_to 'Back', locations_path %>

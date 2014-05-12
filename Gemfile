@@ -41,6 +41,8 @@ group :development, :test do
   gem 'guard-rspec', require: false
 end
 
+  gem 'geocoder'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 

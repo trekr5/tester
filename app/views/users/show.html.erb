@@ -6,7 +6,7 @@
 <%= image_tag @user.image, class: "img-circle", width: 200, height: 200 %>
 <%= @user.nickname %>
 
-<strong ><%= @user.nickname %> </strong>, 
+<%= @user.nickname %> 
                 
 
  <%= form_for @user do |f| %>
@@ -18,12 +18,12 @@
  
   <p>
     <%= f.label :company, "Company" %><br />
-    <%= f.text_field :company %>
+    <%= f.text_area :company %>
   </p>
  
  <p>
     <%= f.label :interest, "Interests" %><br />
-    <%= f.text_field :interest %>
+    <%= f.text_area :interest %>
   </p>
 
   <p>
