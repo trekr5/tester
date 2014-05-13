@@ -5,6 +5,15 @@
 	padding: 10px;
 }
 
+.address address {
+
+	position: absolute;
+	margin-left: 20px ;
+	color: #317eac;
+	font-size: 14px;
+
+}
+
 .user-card img{
 	float:left;
 	margin: 10px;
@@ -154,16 +163,34 @@ background-color: #7BCBF5;
 color: white;
 }
 
-.geocode {
+.geocode h3 {
+
 
 	position: absolute;
+	margin-top: 94px;
 	margin-left: 450px;
-	margin-top: -330px;
+	
 }
+
+.hotel {
+
+	margin-left: 470px;
+	margin-top: 138px;
+	font-size: 14px;
+	color: #317eac;
+
+}
+
 
 .nav > li > a {
 
 	padding: 16px 32px;
+}
+
+.graphic {
+
+	margin-top: -304px;
+	position: absolute;
 }
 
 /* CUSTOMIZE THE CAROUSEL
