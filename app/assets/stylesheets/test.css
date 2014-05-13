@@ -57,9 +57,9 @@
 
 }
 
-.container-fluid {
+.navbar-fixed-top{
 
-	height: 110px;
+	height: 120px;
 }
 
 .btn.btn-default.btn-lg
@@ -139,7 +139,7 @@ margin-bottom: 0;
 
 body { 
 	padding-top: 130px; 
-	min-height: 2000px;
+	min-height: 2000px; 
 
 }
 
@@ -236,6 +236,18 @@ color: white;
 	font-size: 14px;
 	margin-left: 20px;
 	color: #317eac;
+}
+
+.footer{
+ width: 100%;
+ position: fixed;
+ background-color: #2fa4e7;
+ border-color: #2fa4e7 ;
+ height: 500px;
+ 
+ 
+ /*padding-bottom: 90px;
+*/
 }
 
 /* CUSTOMIZE THE CAROUSEL
