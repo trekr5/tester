@@ -29,5 +29,17 @@ describe LocationsController do
       end
 
 
+
+
     end
+
+
+    describe "GET #show" do 
+
+      it "assigns the requested location as @location" do
+         valid_params = FactoryGirl.attributes_for(:location)
+
+      end
+    end  
+
 end
