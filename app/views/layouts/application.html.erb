@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Conference App </title>
+  <title> Conference App </title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
@@ -33,15 +33,17 @@
 
        <!-- <ul class="nav"> -->
        <div class="container-fluid">
-         <a class="navbar-brand text-muted" href="#">Logo</a>
+         <!-- <a class="navbar-brand text-muted" href="#">Logo</a> -->
          <!-- <div class="collapse navbar-collapse"> -->
 
-         <h4>  Conference App </h4>
+         <h4> Welcome to London Back-End Ops Conference 2014 </h4>
+         
+
 
          <span class="picture">
            <% if current_user %>
 
-           <%= image_tag current_user.image, class: "img-circle", width: 50, height: 50 %>
+           <%= image_tag current_user.image, class: "img-rounded", width: 50, height: 50 %>
            <div class="details">
              <div class="dropdown">
               <strong> Welcome, </strong> <%=  current_user.nickname %>

@@ -41,6 +41,8 @@
 	margin-bottom: 0!important;
 }
 
+
+
 .pull-up{
 	margin-top: -19px;
 	margin-left:0;
@@ -79,17 +81,19 @@ margin: 0px;
 {
 	position: absolute;
 	right: 50px;
+	margin-top: -20px;
 }
 
 .picture img{
 	float:left;
 	margin-right: 10px;
 
+
 }
 
 .fa-caret-down
 {
-	color: black;
+	color: white;
 }
 
 
@@ -106,6 +110,8 @@ margin: 0px;
 {
   display: block;
     font-size: 14px;
+    color: white;
+
 }
 
 h4 {
@@ -113,7 +119,15 @@ h4 {
 	text-align: center;
 	color: white;
 	font-family: Arial;
+	font-style: bold;
+	font-size: 23px;
+	margin-top: 28px;
+	text-shadow: 2px 2px #707070;
+
+	
 }
+
+
 
 
 .navbar.navbar-default {
@@ -156,11 +170,28 @@ margin-left: -20px;
 	margin-left: -25px;
 }
 
+.col-md-10 h3 {
+
+	text-align: center;
+}
+
+.col-md-10 h4 {
+
+	text-align: left;
+	font-size: 16px;
+	color: #317eac;
+	text-shadow: none;
+	margin-left: 20px;
+	font-weight: bold;
+}
+
 
 .nav.nav-pills.nav-stacked li  a:hover {
 text-decoration: none;
 background-color: #7BCBF5;
 color: white;
+
+
 }
 
 .geocode h3 {
@@ -191,6 +222,20 @@ color: white;
 
 	margin-top: -304px;
 	position: absolute;
+}
+
+.picture img-rounded {
+
+	vertical-align: middle;
+	text-shadow: 2px 2px #707070;
+}
+
+.ven {
+
+	
+	font-size: 14px;
+	margin-left: 20px;
+	color: #317eac;
 }
 
 /* CUSTOMIZE THE CAROUSEL
@@ -228,6 +273,13 @@ _____________*/
 	margin: 0px;
 
 
+}
+
+.carousel h1 {
+
+
+	color: white;
+	text-shadow: 2px 2px #707070;
 }
 
 
