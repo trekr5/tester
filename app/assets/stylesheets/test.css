@@ -160,6 +160,10 @@ margin-left: -20px;
 
 }
 
+span h3 {
+	margin-left: 20px;
+}
+
 .position {
 
    
@@ -177,6 +181,15 @@ margin-left: -20px;
 	text-align: ;
 }
 
+.col-md-5 .btn-default {
+
+	color: #2fa4e7;
+}
+
+.col-md-10 .btn-default {
+
+	color: #2fa4e7;
+}
 .col-md-10 h4 {
 
 	text-align: left;
@@ -302,7 +315,9 @@ _____________*/
 	text-shadow: 2px 2px #707070;
 }
 
-@media(min-width: 600px){
+@media only screen and (min-width: 600px){
+
+	  
     .sidebar {
 
     	/* width: 30%; */

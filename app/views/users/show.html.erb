@@ -6,7 +6,7 @@
 <%= image_tag @user.image, class: "img-circle", width: 200, height: 200 %>
 <%= @user.nickname %>
 
-<%= @user.nickname %> 
+
                 
 
  <%= form_for @user do |f| %>
@@ -28,7 +28,8 @@
 
   <p>
     <div class="actions" >
-    <%= f.submit  "Update" %>
+        <button type="button" class="btn btn-primary btn-lg">
+    Update</button>
   </div>
   </p>
 <% end %>                
