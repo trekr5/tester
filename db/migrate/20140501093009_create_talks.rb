@@ -4,7 +4,6 @@ class CreateTalks < ActiveRecord::Migration
       t.string :title
       t.string :description
       t.string :duration
-
       t.timestamps
     end
   end
