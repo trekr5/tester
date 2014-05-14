@@ -34,6 +34,7 @@
 .sidebar-menu{
 	margin-top: 0;
 	margin-bottom: 0;
+	/*width: 100%;*/
 }
 
 .navbar .navbar-default .navbar-fixed-top{
@@ -148,6 +149,7 @@ body {
 background-color:  none;
 padding-left: none;
 margin-left: -20px;
+/* width: 100%; */
 
 }
 
@@ -172,7 +174,7 @@ margin-left: -20px;
 
 .col-md-10 h3 {
 
-	text-align: center;
+	text-align: ;
 }
 
 .col-md-10 h4 {
@@ -243,7 +245,8 @@ color: white;
  position: fixed;
  background-color: #2fa4e7;
  border-color: #2fa4e7 ;
- height: 500px;
+ bottom: 0;
+ height: 90px;
  
  
  /*padding-bottom: 90px;
@@ -292,6 +295,18 @@ _____________*/
 
 	color: white;
 	text-shadow: 2px 2px #707070;
+}
+
+@media(min-width: 600px){
+    .sidebar {
+
+    	/* width: 30%; */
+    	clear: none;
+    }
+    .sidebar .nav-pills {
+    	margin-top: 30px;
+    }
+
 }
 
 
