@@ -1,0 +1,29 @@
+
+<div class="col-md-10">
+
+	<div class="row-fluid">
+       <div class="talk">
+      <h2> Talks Schedule </h2>
+        </div>
+
+       <div class="talk2"> 
+       <h4> Back End Ops Conference is a multiple track, single day conference packed with informative talks, and great speakers, designed to stimulate ideas, challenge practices and educate in the exctiing field of Back-End Operations.  </h4>
+       </div>
+       
+     
+		<% @talks.each do |talk| %>
+		
+		<strong> <%= talk.title %> </strong>
+		<br />
+		<%= talk.description %>
+		<% end %>
+
+
+
+
+   </div>
+
+
+
+
+</div>

@@ -13,6 +13,7 @@ Tester::Application.routes.draw do
   get '/speakers' => 'speakers#index', as: :speakers
   get '/schedule' => 'schedule#index', as: :schedule
   get '/location' => 'location#index', as: :location
+  get '/schedule/list' => 'schedule#list', as: :list
 
   root 'home#index'
 

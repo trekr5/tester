@@ -43,7 +43,7 @@
        <span class="picture">
          <% if current_user %>
 
-         <%= image_tag current_user.image, class: "img-rounded", width: 50, height: 50 %>
+         <%= image_tag current_user.image, class: "img-rounded hidden-sm", width: 35, height: 35 %>
          <div class="details">
            <div class="dropdown">
             <strong> Welcome, </strong> <%=  current_user.nickname %>
@@ -82,7 +82,7 @@
     <div class="container-fluid pull-up">
       <div class="row-fluid">
 
-        <div class="col-md-2">
+        <div class="col-md-2 col-sm-4">
 
           <div class="sidebar">
             <ul class="nav nav-pills nav-stacked">
@@ -121,7 +121,7 @@
          </div>
        </div>
 
-       <div class="col-md-10">
+       <div class="col-md-10 col-sm-8">
 
          <%= yield %>
          
