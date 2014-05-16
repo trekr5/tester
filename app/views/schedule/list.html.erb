@@ -1,4 +1,13 @@
 
+
+<script type="text/javascript" src="pdfobject.js"></script>
+     <script type="text/javascript">
+      window.onload = function (){
+        var myPDF = new PDFObject({ url: "test.pdf" }).embed();
+      };
+    </script>
+
+
 <div class="col-md-10">
 
 	<div class="row-fluid">
@@ -16,8 +25,17 @@
 		<strong> <%= talk.title %> </strong>
 		<br />
 		<%= talk.description %>
-		<embed src='assets/test.pdf' width="100" height="100">
+
 		<% end %>
+
+		
+    <!-- <object data="assets/test.pdf" type="application/pdf" width="100%" height="100%"> -->
+ <!-- <p>It appears you don't have Adobe Reader or PDF support in this web
+    browser. <a href="assets/test.pdf"><i class="fa fa-archive fa-lg fa-fw"></i></a></p> -->
+  
+<!-- </object> -->
+
+<iframe src=<%= "test.pdf" %> width="600" height="780" style="border: none;"> </iframe>
 
 
 

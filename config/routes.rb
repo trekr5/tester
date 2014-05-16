@@ -14,6 +14,8 @@ Tester::Application.routes.draw do
   get '/schedule' => 'schedule#index', as: :schedule
   get '/location' => 'location#index', as: :location
   get '/schedule/list' => 'schedule#list', as: :list
+  get '/whitepaper' => 'whitepaper#index', as: :whitepaper
+  get '/whitepaper/readpdf' => 'whitepaper#readpdf', as: :readpdf
 
   root 'home#index'
 

@@ -5,6 +5,7 @@
     <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <script type="text/javascript" src="pdfobject.js"></script>
+    
     <%= csrf_meta_tags %>
     
     <meta charset="utf-8">
@@ -105,7 +106,7 @@
             <li><a href='#'>
               <i class="fa fa-flag-o fa-lg fa-fw"></i> Sponsors
             </a></li>
-            <li><a href='#'>
+            <li><a href=<%= whitepaper_path %>>
               <i class="fa fa-file-text fa-lg fa-fw"></i> Whitepapers
             </a></li>
             <li><a href='#'>
