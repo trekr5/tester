@@ -150,6 +150,70 @@
 	
 }
 
+.whitepaper-2 .fa-lg {
+
+	
+    position: absolute;  
+	
+	font-size: 7.333333em; 
+	left: 380px;
+	top: 70px;
+	
+}
+
+.whitepaper-2 .fa-lg span {
+
+	
+	font-size: 15px;
+
+
+	
+	
+}
+
+.whitepaper-3 .fa-lg {
+
+	
+    position: absolute;  
+	
+	font-size: 7.333333em; 
+	left: 560px;
+	top: 70px;
+	
+}
+
+.whitepaper-3 .fa-lg span {
+
+	
+	font-size: 15px;
+
+
+	
+	
+}
+
+.whitepaper-4 .fa-lg {
+
+	
+    position: absolute;  
+	
+	font-size: 7.333333em; 
+	left: 730px;
+	top: 70px;
+	
+}
+
+.whitepaper-4 .fa-lg span {
+
+	
+	font-size: 15px;
+
+
+	
+	
+}
+
+
 .whitepaper .fa-lg span {
 
 	
@@ -182,6 +246,98 @@
 	
 }
 
+.paperx-1 .fa-lg {
+
+	top: 200px;
+	font-family: FontAwesome;
+	position: absolute;
+    font-size: 7.333333em; 
+    left: 200px;
+    /* content: “\f00c”; */
+	
+	
+}
+
+.paperx-1 .fa-lg span {
+
+	
+	
+	
+    font-size: 15px;
+    /* content: “\f00c”; */
+	
+	
+}
+
+.paperx-2 .fa-lg {
+
+	top: 200px;
+	font-family: FontAwesome;
+	position: absolute;
+    font-size: 7.333333em; 
+    left: 380px;
+    /* content: “\f00c”; */
+	
+	
+}
+
+.paperx-2 .fa-lg span {
+
+	
+	
+	
+    font-size: 15px;
+    /* content: “\f00c”; */
+	
+	
+}
+
+.paperx-3 .fa-lg {
+
+	top: 200px;
+	font-family: FontAwesome;
+	position: absolute;
+    font-size: 7.333333em; 
+    left: 560px;
+    /* content: “\f00c”; */
+	
+	
+}
+
+.paperx-3 .fa-lg span {
+
+	
+	
+	
+    font-size: 15px;
+    /* content: “\f00c”; */
+	
+	
+}
+
+.paperx-4 .fa-lg {
+
+	top: 200px;
+	font-family: FontAwesome;
+	position: absolute;
+    font-size: 7.333333em; 
+    left: 730px;
+    /* content: “\f00c”; */
+	
+	
+}
+
+.paperx-4 .fa-lg span {
+
+	
+	
+	
+    font-size: 15px;
+    /* content: “\f00c”; */
+	
+	
+}
+
 .paper .fa-lg {
 	
 	top: 330px;
@@ -195,9 +351,85 @@
 
 .paper .fa-lg span {
 
+    font-size: 15px;
+    /* content: “\f00c”; */
 	
 	
+}
+
+.paper-1 .fa-lg {
 	
+	top: 330px;
+	font-family: FontAwesome;
+	position: absolute;
+    font-size: 7.333333em; 
+    /* content: “\f00c”; */
+    left: 200px;
+	
+	
+}
+
+.paper-1 .fa-lg span {
+
+    font-size: 15px;
+    /* content: “\f00c”; */
+	
+	
+}
+
+.paper-2 .fa-lg {
+	
+	top: 330px;
+	font-family: FontAwesome;
+	position: absolute;
+    font-size: 7.333333em; 
+    /* content: “\f00c”; */
+    left: 380px;
+	
+	
+}
+
+.paper-2 .fa-lg span {
+
+    font-size: 15px;
+    /* content: “\f00c”; */
+	
+	
+}
+
+.paper-3 .fa-lg {
+	
+	top: 330px;
+	font-family: FontAwesome;
+	position: absolute;
+    font-size: 7.333333em; 
+    /* content: “\f00c”; */
+    left: 560px;
+	
+	
+}
+
+.paper-3 .fa-lg span {
+
+    font-size: 15px;
+    /* content: “\f00c”; */
+	
+	
+}
+
+.paper-4 .fa-lg {
+	
+	top: 330px;
+	font-family: FontAwesome;
+	position: absolute;
+    font-size: 7.333333em; 
+    /* content: “\f00c”; */
+    left: 730px;
+	
+	
+}
+
+.paper-4 .fa-lg span {
 
     font-size: 15px;
     /* content: “\f00c”; */
