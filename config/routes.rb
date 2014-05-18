@@ -16,7 +16,8 @@ Tester::Application.routes.draw do
   get '/schedule/list' => 'schedule#list', as: :list
   get '/whitepaper' => 'whitepaper#index', as: :whitepaper
   get '/whitepaper/readpdf' => 'whitepaper#readpdf', as: :readpdf
-
+  get '/whitepaper/read' => 'whitepaper#read', as: :read
+  get '/whitepaper/read_display' => 'whitepaper#read_display', as: :read_display
   root 'home#index'
 
   get '/auth/:provider/callback' => 'sessions#create'
