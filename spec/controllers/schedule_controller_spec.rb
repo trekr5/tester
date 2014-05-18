@@ -2,21 +2,28 @@ require 'spec_helper'
 
 describe ScheduleController do
 
+  let(:talk) { FactoryGirl.create(:talk) }
+	
+
    describe "#index" do
-     it "populates a display of talks" do
-       talk = FactoryGirl.create(:talk)
+
+   	
+
+       it "has an index action" do
+     
        get :index
-       assigns(:talks).should eq([talk])
+       response.should be_ok
 
 
-	end	
+	   end	
 
-  it "should show the index view" do
-  get :index 
+       it "should show the index view" do
+        
+       get :index 
 
-  	response.should render_template :index
+  	   response.should render_template :index
    
-  end
+       end
 
   end	
 end
