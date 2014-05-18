@@ -122,7 +122,28 @@
 	
 	position: absolute; 
 	top: 70px;
-	font-size: 3.333333em; 
+	font-size: 7.333333em; 
+
+
+	
+	
+}
+
+.whitepaper-1 .fa-lg {
+
+	
+    position: absolute;  
+	
+	font-size: 7.333333em; 
+	left: 200px;
+	top: 70px;
+	
+}
+
+.whitepaper-1 .fa-lg span {
+
+	
+	font-size: 15px;
 
 
 	
@@ -132,7 +153,7 @@
 .whitepaper .fa-lg span {
 
 	
-	font-size: 16px;
+	font-size: 15px;
 
 
 	
@@ -144,7 +165,7 @@
 	top: 200px;
 	font-family: FontAwesome;
 	position: absolute;
-    font-size: 3.333333em; 
+    font-size: 7.333333em; 
     /* content: “\f00c”; */
 	
 	
@@ -155,7 +176,7 @@
 	
 	
 	
-    font-size: 16px;
+    font-size: 15px;
     /* content: “\f00c”; */
 	
 	
@@ -166,7 +187,7 @@
 	top: 330px;
 	font-family: FontAwesome;
 	position: absolute;
-    font-size: 3.333333em; 
+    font-size: 7.333333em; 
     /* content: “\f00c”; */
 	
 	
@@ -177,7 +198,8 @@
 	
 	
 	
-    font-size: 16px;
+
+    font-size: 15px;
     /* content: “\f00c”; */
 	
 	
