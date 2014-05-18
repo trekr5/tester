@@ -117,11 +117,26 @@
 
 }
 
-.whitepaper .fa-lg{
+.whitepaper .fa-lg {
 
-	font-size: 5.333em;
+	
+	position: absolute; 
+	top: 90px;
+	font-size: 4.333333em;
+
+	
+	
+}
+
+.paperx .fa-lg {
+
+	
+	
+	top: 200px;
+	font-family: FontAwesome;
 	position: absolute;
-	top: 70px;
+    font-size: 4.333333em;
+    /* content: “\f00c”; */
 	
 	
 }
@@ -267,6 +282,7 @@ span h3 {
 .picture img-rounded {
 
 	vertical-align: middle;
+    text-shadow: 2px 2px #707070;
 	
 }
 
