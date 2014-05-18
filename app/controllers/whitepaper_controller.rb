@@ -6,8 +6,9 @@ class WhitepaperController < ApplicationController
     def readpdf
 
    
-    send_file "tmp/test.pdf", 
+    send_file "public/test.pdf", 
             :type => "application/pdf", 
-            :disposition => 'inline'
+            #:disposition => 'inline'
+            :filename => "test.pdf"
   end  
 end

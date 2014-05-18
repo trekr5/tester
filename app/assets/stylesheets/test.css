@@ -1,3 +1,6 @@
+
+
+
 .user-card{
 	float: left;
 	width: 32%;
@@ -55,6 +58,7 @@
 .pull-up .row-fluid{
 	margin-left: -20px;
 }
+
 .formatpic.img
 {
 	float: left;
@@ -116,7 +120,9 @@
 .whitepaper .fa-lg{
 
 	font-size: 5.333em;
-	bottom: 120;
+	position: absolute;
+	top: 70px;
+	
 	
 }
 
@@ -179,7 +185,7 @@ span h3 {
 
 .col-md-5 .btn-block {
 
-	font-weight: bold
+	font-weight: bold;
 	text-shadow: 2px 2px #707070;
 }
 
@@ -197,7 +203,7 @@ span h3 {
 
 .col-md-10 h3 {
 
-	text-align: ;
+	text-align: none;
 }
 
 .col-md-5 .btn-default {
@@ -261,7 +267,7 @@ span h3 {
 .picture img-rounded {
 
 	vertical-align: middle;
-	text-shadow: 2px 2px #707070;
+	
 }
 
 .picture a {
@@ -295,7 +301,7 @@ span h3 {
 	background-color: #2fa4e7;
 	border-color: #2fa4e7 ;
 	bottom: 0;
-	height: 111px;
+	height: 105px;
 
 
  /*padding-bottom: 90px;

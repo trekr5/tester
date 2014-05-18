@@ -8,7 +8,7 @@ feature "testing oauth"  do
 
     	   OmniAuth.config.mock_auth[:github]
 
-        visit root_url
+        visit '/'
         click_link "Sign in with Github"
 
      
