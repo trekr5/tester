@@ -1,4 +1,20 @@
+.speaker {
 
+	display: inline-block;
+	color: #317eac;
+	
+
+}
+
+.speaker img {
+
+	border: 5px solid #EEE;
+}
+
+.speaker span {
+
+	font-size: 18px;
+}
 
 .show-page {
 float: left;
@@ -20,7 +36,7 @@ float: left;
 .show-page h2, .show-page h3{
 	float:left;
 	width: 50%;
-	font-size: 19px;
+	font-size: 16px;
 	margin: 10px 0;
 	font-weight: none;
 }
