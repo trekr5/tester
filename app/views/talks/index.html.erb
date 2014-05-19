@@ -1,1 +1,11 @@
-<h1>bmmmmmmm  </h1>
+<div class="row-fluid">
+   </br> </br></br>
+	<% @talks.each do |talk| %>
+		
+		<strong> <%= talk.title %> </strong>
+		<br />
+		<%= talk.description %>
+
+		<% end %>
+
+      </div> 
