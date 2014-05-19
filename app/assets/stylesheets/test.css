@@ -2,7 +2,8 @@
 
 	display: inline-block;
 	color: #317eac;
-	
+	font-size: 15px;
+
 
 }
 
@@ -41,11 +42,9 @@ float: left;
 	font-weight: none;
 }
 
-.show-page h2{
+.show-page h3{
 	margin-left: 0;
 }
-
-
 
 .user-card{
 	float: left;
