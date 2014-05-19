@@ -111,18 +111,20 @@
             <li><a href='/'>
               <i class="fa fa-rss-square fa-lg fa-fw"></i> Social Media
             </a></li>
-            <% if flash[:notice] %>
-              <div class="alert alert-warning">
-               <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-               <div><%= flash.now[:notice] %></div>
-             </div>
-            <% end %>
+           
 
            </ul>
          </div>
        </div>
 
        <div class="col-md-10 col-sm-8">
+        <% if flash[:notice] %>
+              <div class="alert alert-success">
+               <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+               <div><%= flash.now[:notice] %></div>
+             </div>
+            <% end %>
+
 
          <%= yield %>
          
