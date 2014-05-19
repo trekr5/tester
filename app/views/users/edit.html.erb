@@ -1,0 +1,35 @@
+
+
+<h2> Profile Page </h2>
+
+
+<%= image_tag @user.image, class: "img-circle", width: 200, height: 200 %>
+<%= @user.nickname %>
+
+
+                
+
+ <%= form_for @user do |f| %>
+  <p>
+    
+    <%= f.label :fullname, "Full Name" %><br />
+    <%= f.text_field :fullname %>
+  </p>
+ 
+  <p>
+    <%= f.label :company, "Company" %><br />
+    <%= f.text_area :company %>
+  </p>
+ 
+ <p>
+    <%= f.label :interest, "Interests" %><br />
+    <%= f.text_area :interest %>
+  </p>
+
+  <p>
+    <div class="actions" >
+        <button type="button" class="btn btn-primary btn-lg">
+    Update</button>
+  </div>
+  </p>
+<% end %>                
