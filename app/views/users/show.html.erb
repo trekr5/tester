@@ -12,7 +12,11 @@
       <h3>Interests:      <%= @user.interest %></h3>
       <h3>Talks registered for:
      
-  
+      <% @user.talks.each do |talk| %>
+
+      <%= talk.title %>
+
+      <% end %>
 </div>
 </div>
 

@@ -33,7 +33,7 @@ end
 def update
 
 	@user = User.find(params[:id])
-      if @user.update_attributes(params[:user])
+      if @user.update_attributes(user_params)
          redirect_to :action => 'show', :id => @user
       else
          @user = User.find(params[:id])
@@ -42,6 +42,12 @@ def update
 
 
 end	
+
+private 
+
+def user_params
+    params.require(:user).permit(:name, :uid, :nickname, :company, :image, :fullname, :interest, :position)
+  end
 
 
 

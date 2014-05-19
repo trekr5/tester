@@ -8,6 +8,7 @@ Tester::Application.routes.draw do
   resources :users
   resources :talks
   resources :registrations
+  post '/talks/:talk_id/register' => 'registrations#create'
   # You can have the root of your site routed with "root"
 
   #resources :speakers, only: [:index]

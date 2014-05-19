@@ -1,11 +1,17 @@
 <div class="row-fluid">
    </br> </br></br>
+   <ul>
 	<% @talks.each do |talk| %>
-		
+		<li>
 		<strong> <%= talk.title %> </strong>
 		<br />
 		<%= talk.description %>
+		<%= talk.category.title %>
+		<%= button_to "Register", "/talks/#{talk.id}/register" %>
+	</li>
 
 		<% end %>
+
+	</ul>
 
       </div> 
