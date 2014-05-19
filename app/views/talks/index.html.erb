@@ -1,17 +1,27 @@
 <div class="row-fluid">
    </br> </br></br>
+   <div class="register">
    <ul>
 	<% @talks.each do |talk| %>
-		<li>
-		<strong> <%= talk.title %> </strong>
+		
+		<strong> <%= talk.title %> </strong> <span><%= talk.start_time.strftime("%H:%M") %> - <%= talk.end_time.strftime("%H:%M") %></span>
+
 		<br />
-		<%= talk.description %>
-		<%= talk.category.title %>
-		<%= button_to "Register", "/talks/#{talk.id}/register" %>
-	</li>
+		<%= talk.description %><br />
+		<i> <span><%= talk.speaker %></span> </i>
+		<br /><br />
+		<span> <i class="fa fa-archive fa-lg fa-fw"></i> <%= talk.category.title %> </span>
+		<br /><br />
+		
+		<%= button_to "Register", "/talks/#{talk.id}/register", class: "btn btn-primary" %>
+	    
+		<br /><br />
+
+	
 
 		<% end %>
 
 	</ul>
+    </div>
 
       </div> 

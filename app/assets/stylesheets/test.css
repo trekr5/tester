@@ -1,3 +1,19 @@
+
+.register {
+
+color: #317eac;
+
+}
+
+.register span {
+
+ color: #2fa4e7;
+
+}
+
+
+
+
 .speaker {
 
 	display: inline-block;
@@ -651,7 +667,7 @@ span h3 {
 .talk2 h4 {
 
 	margin-left: -2px;
-	font-weight: none;
+	font-weight: lighter;
 
 }
 

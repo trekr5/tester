@@ -6,21 +6,23 @@
 
 	<div class="row-fluid">
        <div class="talk">
-      <h2> Talks Schedule </h2>
+      <h2> Schedule </h2>
         </div>
 
        <div class="talk2"> 
-       <h4> Back End Ops Conference is a multiple track, single day conference packed with informative talks, and great speakers, designed to stimulate ideas, challenge practices and educate in the exctiing field of Back-End Operations.  </h4>
+       <h4> Back-End Ops Conference is a multiple track, single day conference packed with informative talks, and great speakers, designed to stimulate ideas, challenge practices and educate in the exciting field of Back-End Operations. Interspersed throughout the day are breaks for conversation, plus delicious catered food served by an award winning chef and plenty of networking opportunities.  </h4>
        </div>
        
      
 		<% @talks.each do |talk| %>
 		
+    <ul>
 		<strong> <%= talk.title %> </strong>
 		<br />
 		<%= talk.description %>
-
+    <br /><br />
 		<% end %>
+  </ul>
 
 		
     <!-- <object data="assets/test.pdf" type="application/pdf" width="100%" height="100%"> -->
