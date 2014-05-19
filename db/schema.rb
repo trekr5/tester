@@ -11,7 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140514174742) do
+ActiveRecord::Schema.define(version: 20140519111851) do
+
+  create_table "categories", force: true do |t|
+    t.string   "title"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "locations", force: true do |t|
     t.string   "address"
@@ -41,11 +47,11 @@ ActiveRecord::Schema.define(version: 20140514174742) do
     t.string   "description"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "category"
     t.string   "speaker"
     t.string   "image"
     t.datetime "start_time"
     t.datetime "end_time"
+    t.integer  "category_id"
   end
 
   create_table "users", force: true do |t|

@@ -6,41 +6,71 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+general = Category.create(title: 'General')
+backend_as_a_service = Category.create(title: 'Backend as a Service')
+introduction = Category.create(title: 'Introduction')
+security = Category.create(title: 'Security')
+server_side_programming = Category.create(title: 'Server-side programming')
 
-Talk.create(title: 'Fishes culture',
-	        description: 'Talk about fishes',
-	        category: 'Koi Fish',
-	        duration: '20 mins',
+
+Talk.create(title: 'Welcome to BackEnd Ops! ',
+	        description: 'Welcome address to conference',
+	        category: introduction,
 	        speaker: 'Sandy Mango',
-	        image: '/assets/baseball_player_vintage.jpg')
+	        image: '/assets/user-2-icon-256.jpg',
+            start_time: '09:00:00',
+            end_time: '09:30:00')
 
-Talk.create(title: 'Wolves culture',
-	        description: 'Talk about wolves',
-	        category: 'Animals',
-	        duration: '40 mins',
+Talk.create(title: 'The Future of Backend ?',
+	        description: 'Discussion around the future of Backend programming',
+	        category: backend_as_a_service,
 	        speaker: 'Dusty Knowles',
-	        image: '/assets/big_nose_man.jpeg')
+	        image: '/assets/user-2-icon-256.jpg',
+	        start_time: '09:30:00',
+	         end_time: '10:30:00')
+Talk.create(title: 'What are best practices for server side development ?',
+	        description: 'Discussion around best practice in backend development',
+	        category: server_side_programming,
+	        speaker: 'Wes Denappy',
+	        image: '/assets/user-icon-256.jpg',
+	        start_time: '10:30:00',
+	        end_time: '11:30:00')
 
-Talk.create(title: 'Shellfish culture',
-	        description: 'Talk about shellfish',
-	        category: 'Shellfish',
-	        duration: '25 mins',
-	        speaker: 'Tweedle Dee',
-	        image: '/assets/business_man.jpg')
-
-Talk.create(title: 'How to start a Shrimp business',
-	        description: 'How to start a Shrimp business in 30 days',
-	        category: 'Shellfish',
-	        duration: '45 mins',
-	        speaker: 'Tweedle Dum',
-	        image: '/assets/brown_hair.jpg')
-
-Talk.create(title: 'Breeding fishes',
-	        description: 'The bussiness of fish',
-	        category: 'Crustaceans',
-	        duration: '50 mins',
-	        speaker: 'Dorothy',
-	        image: '/assets/baseball_player_vintage.jpg')
+Talk.create(title: 'Writing server-side code',
+	        description: 'Application development',
+	        category: server_side_programming,
+	        speaker: 'Karl Wesley',
+	        image: '/assets/user-icon-256.jpg',
+	        start_time: '11:30:00',
+	        end_time: '12:30:00')
+Talk.create(title: 'What are best practices for server side security ?',
+	        description: 'Discussion around best practice in backend security',
+	        category: security,
+	        speaker: 'Dusty Knowles',
+	        image: '/assets/user-2-icon-256.jpg',
+	        start_time: '13:30:00',
+	        end_time: '14:30:00')
+Talk.create(title: 'The Backend developer',
+	        description: 'Furthering your career as a backend developer',
+	        category: general,
+	        speaker: 'Sandy Mango',
+	        image: '/assets/user-2-icon-256.jpg',
+	        start_time: '14:30:00',
+	        end_time: '15:30:00')
+Talk.create(title: 'The Cloud',
+	        description: 'Cloud storage technologies and the impact on backend applications',
+	        category: backend_as_a_service,
+	        speaker: 'Caroline Other',
+	        image: '/assets/user-2-icon-256.jpg',
+	        start_time: '15:30:00',
+	        end_time: '16:30:00')
+Talk.create(title: 'Networking',
+	        description: 'Networking hour',
+	        category: general,
+	        speaker: 'Sandy Mango',
+	        image: '/assets/user-icon-256.jpg',
+	        start_time: '16:30:00',
+	        end_time: '17:30:00')
 
 User.create(provider: 'github',
             uid: '745670',
@@ -59,13 +89,5 @@ User.create(provider: 'github',
             image: '/assets/big_nose_man.jpg',
             name: 'ruby',
             fullname: 'the dog',
-            company: 'Funding circle',
+            company: 'Idah Ltd',
             interest: 'swimming, walking')
-Location.create!(address: 'Canary Wharf',
-	            latitude: '51.5050363',
-	            longitude: '-0.0197732')
-Location.create!(address: 'London Bridge',
-	            latitude: '51.507929',
-	            longitude: '-0.0877086')
-
-

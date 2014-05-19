@@ -500,7 +500,7 @@ span h3 {
 .col-md-5 .btn-block {
 
 	font-weight: bold;
-	text-shadow: 2px 2px #707070;
+	/* text-shadow: 2px 2px #707070; */
 }
 
 .position {

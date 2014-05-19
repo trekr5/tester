@@ -9,6 +9,5 @@ FactoryGirl.define do
     image "/assets/baseball_player_vintage.jpg"
     start_time 1030
     end_time 1130
-
   end
 end

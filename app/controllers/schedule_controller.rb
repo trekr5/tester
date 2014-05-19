@@ -1,7 +1,10 @@
 class ScheduleController < ApplicationController
-	
+  
     def index
-    	@talks = Talk.all
+      @talks = Talk.all
+      if params[:order] == "time"
+        @talks.order(:starts_at, :asc)
+      end
 
 
 
@@ -11,5 +14,5 @@ class ScheduleController < ApplicationController
 
        @talks = Talk.all
 
-    end 	
+    end   
 end

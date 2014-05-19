@@ -1,6 +1,8 @@
 Tester::Application.routes.draw do
   
 
+  get "category/index"
+  get "category/show"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
   resources :users
@@ -12,6 +14,9 @@ Tester::Application.routes.draw do
 
   get '/speakers' => 'speakers#index', as: :speakers
   get '/schedule' => 'schedule#index', as: :schedule
+
+  get '/schedule/:category_id/talks' => 'talks#index', as: :category_talks
+
   get '/location' => 'location#index', as: :location
   get '/schedule/list' => 'schedule#list', as: :list
   get '/whitepaper' => 'whitepaper#index', as: :whitepaper
