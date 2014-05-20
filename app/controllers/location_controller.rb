@@ -1,9 +1,9 @@
-class LocationController < ApplicationController
+	class LocationController < ApplicationController
 
 
-  def index
+		def index
 
-  end
-  
-    
-end
+		end
+		
+		
+	end

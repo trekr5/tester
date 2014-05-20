@@ -6,26 +6,26 @@ class UsersController < ApplicationController
 
 
 
-def new
+  def new
 
 
-end
+  end
 
-def index
+  def index
    @users = User.all
    
-end
+ end
 
 
-def show
+ def show
 
- @user = User.find(params[:id])
+   @user = User.find(params[:id])
 
-end	
+ end	
 
 
-def edit
-@user = User.find(params[:id])
+ def edit
+  @user = User.find(params[:id])
 
 end
 
@@ -33,12 +33,12 @@ end
 def update
 
 	@user = User.find(params[:id])
-      if @user.update_attributes(user_params)
-         redirect_to :action => 'show', :id => @user
-      else
-         @user = User.find(params[:id])
-         render :action => 'edit'
-      end
+  if @user.update_attributes(user_params)
+   redirect_to :action => 'show', :id => @user
+ else
+   @user = User.find(params[:id])
+   render :action => 'edit'
+ end
 
 
 end	
@@ -46,8 +46,8 @@ end
 private 
 
 def user_params
-    params.require(:user).permit(:name, :uid, :nickname, :company, :image, :fullname, :interest, :position)
-  end
+  params.require(:user).permit(:name, :uid, :nickname, :company, :image, :fullname, :interest, :position)
+end
 
 
 

@@ -1,6 +1,13 @@
 
-== README ==
+
 
 Final Project
+=============
+
+
+
+This is my final project submitted for the Codecraft course.
+
+It is a web app constructed using Ruby on Rails with testing implemented using RSpec and Capybara.
 
 

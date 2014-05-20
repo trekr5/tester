@@ -1,23 +1,28 @@
 
+
+
+
 .profileh2 h2{
 	text-align: center;
 }
 
+
+
 .show-page1 {
 
-    float: left;
-	width: 50%;
+    float: none;
+	width: 30%;
 	padding: 10px;
 	
-	margin: 5px;
-	height: 160px;
+	margin: 9px;
+	height: 320px;
 	color: #317eac;
 
 }
 
 .show-page1 img{
-	float: left;
-	margin: 10px;
+	float: none;
+	margin: -44px;
 	/* display: block;*/
 	border: 5px solid #EEE;
 }

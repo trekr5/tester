@@ -16,13 +16,6 @@ class User < ActiveRecord::Base
 			user.image = auth["info"]["image"]
 		end
 	end 
-
-	
-
-
-
-
-
 end
 
 
