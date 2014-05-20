@@ -18,12 +18,6 @@ describe TalksController do
 
     end 
 
-     it "should show the index view" do
-       get :index 
-
-       response.should render_template :index
-   
-    end
 
   end 
 
@@ -35,12 +29,6 @@ describe TalksController do
 
      
 
-     end
-
-     it "should show the show view" do
-      get :show, id: talk
-      response.should render_template :show
-      
      end
 
    end
