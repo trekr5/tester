@@ -1,5 +1,7 @@
 class TalksController < ApplicationController
 
+		before_filter :authenticate!
+
 
 def index
 	if params[:category_id]

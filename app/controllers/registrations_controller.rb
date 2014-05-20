@@ -8,7 +8,7 @@ class RegistrationsController < ApplicationController
 		if @registration.save
 			redirect_to schedule_path, notice: "You have signed up for this talk"
 		else
-			redirect_to schedule_talks_path(talk.category), warning: "Could not sign you up."
+			redirect_to schedule_talks_path(talk.category), warning: "Could not sign you up for this talk"
 		end
 
 
