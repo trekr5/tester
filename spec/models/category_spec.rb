@@ -1,11 +1,11 @@
 require 'spec_helper'
 
- def make_category_with_talks(attrs = {})
- 	Category.create(attrs) do |c|
- 		talk = FactoryGirl.create(:talk)
- 		3.times { c.talks << talk }
- 	    end
- end	    
+ #def make_category_with_talks(attrs = {})
+ #	Category.create(attrs) do |c|
+ #		talk = FactoryGirl.create(:talk)
+ #		3.times { c.talks << talk }
+ #	    end
+ #end	    
 
 describe Category do
 
@@ -14,11 +14,19 @@ describe Category do
 		
 	end
 
-	describe "relations" do 
-      it "should have a many relations with talks" do
-      	 make_category_with_talks(:title => 'MyTalks').talks.size.should == 3
-      end	 
+#	describe "relations" do 
+ #     it "should have a many relations with talks" do
+  #    	 make_category_with_talks(:title => 'MyTalks').talks.size.should == 3
+   #   end	 
 
 
-  end
+  # end
+
+    it "should have many talks" do 
+
+     t = Category.reflect_on_association(:talks)
+       t.macro.should == :has_many
+
+
+   end
 end
