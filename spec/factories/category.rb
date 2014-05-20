@@ -2,6 +2,6 @@
 
 FactoryGirl.define do
   factory :category do
-    title "Application Development"
+    title 'Application Development'
   end
 end

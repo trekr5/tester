@@ -4,10 +4,11 @@ FactoryGirl.define do
   factory :talk do
     title "MyTalk"
     description "This is a talk"
-    category "Introduction"
     speaker "Mr Blobby"
     image "/assets/baseball_player_vintage.jpg"
-    start_time 1030
-    end_time 1130
+    start_time "21-05-2014 11:30"
+    end_time "21-05-2014 12:30"
+
+    association :category
   end
 end

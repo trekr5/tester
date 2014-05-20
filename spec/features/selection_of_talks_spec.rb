@@ -1,20 +1,27 @@
 require 'spec_helper'
 
-feature "testing selection of talks" do 
+feature "selection of talks" do 
 	scenario "testing" do
 
-		visit '/schedule'
-
-		click_button('General')
 
 
-		expect(page).to have_content 'The Backend developer'
+			
+				user = FactoryGirl.create(:user)
+				category = FactoryGirl.create(:category)
+				talk = FactoryGirl.create(:talk, category: category)
+				login_as_user(user)
+				visit '/schedule'
+			
 
 
 
+			click_link category.title
 
 
+			expect(page).to have_content talk.title
 
+
+		
 
 	end
 
