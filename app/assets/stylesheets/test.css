@@ -1,4 +1,42 @@
 
+.profileh2 h2{
+	text-align: center;
+}
+
+.show-page1 {
+
+    float: left;
+	width: 50%;
+	padding: 10px;
+	
+	margin: 5px;
+	height: 160px;
+	color: #317eac;
+
+}
+
+.show-page1 img{
+	float: left;
+	margin: 10px;
+	/* display: block;*/
+	border: 5px solid #EEE;
+}
+
+
+.profile img {
+border: 5px solid #EEE;
+
+}
+
+.profile1 {
+
+	float: none;
+	width: 30%;
+	padding: 10px;
+	margin: 5px;
+	height: 320px;
+}
+
 .register {
 
 color: #317eac;
@@ -10,7 +48,6 @@ color: #317eac;
  color: #2fa4e7;
 
 }
-
 
 
 
@@ -677,7 +714,7 @@ span h3 {
 	background-color: #2fa4e7;
 	border-color: #2fa4e7 ;
 	bottom: 0;
-	height: 105px;
+	height: 95px;
 
 
  /*padding-bottom: 90px;
@@ -728,7 +765,7 @@ _____________*/
 	text-shadow: 2px 2px #707070;
 }
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 640px){
 
 
 	.sidebar {
@@ -739,6 +776,8 @@ _____________*/
 	.sidebar .nav-pills {
 		margin-top: 30px;
 	}
+
+	
 
 }
 

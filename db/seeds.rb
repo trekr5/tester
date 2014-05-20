@@ -87,7 +87,7 @@ User.create(provider: 'github',
             image: '/assets/user-2-icon-256.jpg',
             name: 'angela',
             fullname: 'konstantinople',
-            company: 'self-employed',
+            company: 'Raddox Inc.',
             interest: 'yoga, running',
             position: 'CTO')
 
@@ -110,7 +110,7 @@ User.create(provider: 'github',
             fullname: 'the cat',
             company: 'XXX Ltd',
             interest: 'triathlon, walking',
-            position: 'Engineer')
+            position: 'engineer')
 User.create(provider: 'github',
             uid: '762222',
             info: 'nil',
@@ -118,9 +118,9 @@ User.create(provider: 'github',
             image: '/assets/user-2-icon-256.jpg',
             name: 'angela',
             fullname: 'James Card',
-            company: 'self-employed',
+            company: 'BBB Ltd',
             interest: 'yoga',
-            position: 'Backend engineer')
+            position: 'engineer')
 User.create(provider: 'github',
             uid: '707762',
             info: 'nil',
@@ -128,9 +128,9 @@ User.create(provider: 'github',
             image: '/assets/user-icon-256.jpg',
             name: 'angela',
             fullname: 'April Ham',
-            company: 'self-employed',
+            company: 'YYY Ltd',
             interest: 'yoga, running',
-            position: 'Backend engineer')
+            position: 'engineer')
 User.create(provider: 'github',
             uid: '733333',
             info: 'nil',
@@ -140,7 +140,7 @@ User.create(provider: 'github',
             fullname: 'the cat',
             company: 'XXX Ltd',
             interest: 'triathlon, walking',
-            position: 'Engineer')
+            position: 'engineer')
 User.create(provider: 'github',
             uid: '762222',
             info: 'nil',
@@ -148,9 +148,9 @@ User.create(provider: 'github',
             image: '/assets/user-2-icon-256.jpg',
             name: 'angela',
             fullname: 'James Card',
-            company: 'self-employed',
+            company: 'ZZZ Ltd',
             interest: 'yoga',
-            position: 'Backend engineer')
+            position: 'engineer')
 User.create(provider: 'github',
             uid: '707762',
             info: 'nil',
@@ -158,6 +158,6 @@ User.create(provider: 'github',
             image: '/assets/user-icon-256.jpg',
             name: 'angela',
             fullname: 'April Ham',
-            company: 'self-employed',
+            company: 'AAA Ltd',
             interest: 'yoga, running',
-            position: 'Backend engineer')
+            position: 'engineer')
